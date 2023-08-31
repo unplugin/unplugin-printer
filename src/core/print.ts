@@ -1,4 +1,5 @@
 import * as korlorist from 'kolorist'
+import boxen from 'boxen'
 import type { MessageValue, Options } from '../types'
 
 function log(msg: string | void) {
@@ -8,7 +9,6 @@ function log(msg: string | void) {
 }
 
 async function printWithBoxen(res: MessageValue) {
-  const { default: boxen } = await import('boxen')
   res.borderStyle = res.borderStyle || 'none'
   // @ts-expect-error missing type
   log(boxen(res.text, res))

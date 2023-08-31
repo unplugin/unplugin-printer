@@ -3,16 +3,12 @@ import type { Options } from './types'
 import '@nuxt/schema'
 import { print } from './core/print'
 
-export interface ModuleOptions extends Options {
-
-}
-
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<Options>({
   meta: {
     name: 'nuxt-unplugin-printer',
     configKey: 'unpluginPrinter',
   },
-  setup(options, nuxt) {
+  setup(options: Options, nuxt) {
     nuxt.hook('vite:serverCreated', (_, { isServer }) => {
       if (isServer)
         print(options.info)

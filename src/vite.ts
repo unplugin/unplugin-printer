@@ -1,4 +1,5 @@
-import { createVitePlugin } from 'unplugin'
-import { unpluginFactory } from '.'
+import type { Plugin } from 'vite'
+import type { Options } from './types'
+import unplugin from '.'
 
-export default createVitePlugin(unpluginFactory)
+export default unplugin.vite as (options?: Options | undefined) => Plugin

@@ -1,9 +1,7 @@
-import Unplugin from '../dist/webpack.js'
-
-export default {
+module.exports = {
   configureWebpack: {
     plugins: [
-      Unplugin({
+      require('../dist/webpack.cjs')({
         info: [
           async () => {
             await new Promise(resolve => setTimeout(resolve, 1000))
