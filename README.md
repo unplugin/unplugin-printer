@@ -62,10 +62,10 @@ export default defineConfig({
         // 1. use string value
         'Hello World',
 
-        // 2. use object value to customize the text color and style
+        // 2. use object to customize the style
         { text: 'Hello World', padding: 1, margin: 1, borderColor: 'green' },
 
-        // 3. use function value to customize the text color and style
+        // 3. use function to customize the text color and style
         (kolorist) => {
           return {
             text: kolorist.yellow('Hello World'),
@@ -156,3 +156,7 @@ module.exports = {
 
 <br></details>
 
+
+## License
+
+MIT License © 2023-PRESENT [webfansplz](./LICENSE)
