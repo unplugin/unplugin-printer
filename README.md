@@ -20,6 +20,79 @@
 npm i unplugin-printer
 ```
 
+## Features
+
+- User-friendly options
+
+- Customizable styles
+
+- Supports async functions
+
+## Options
+
+`unplugin-printer` uses [kolorist](https://github.com/marvinhagemeister/kolorist) and [boxen](https://github.com/sindresorhus/boxen) to customize the text color and style of the output. You can refer to the documentation to explore the available options in detail.
+
+```ts
+import type * as kolorist from 'kolorist'
+
+import type { Options as BoxenOptions } from 'boxen'
+
+type Kolorist = typeof kolorist
+
+type MessageValue = BoxenOptions & { text: string }
+
+type Message = string | MessageValue | ((kolorist: Kolorist) => string | MessageValue | Promise<string | MessageValue | void>)
+
+interface Options {
+  info: Message[]
+}
+```
+
+## Usage
+
+```ts
+// vite.config.ts
+
+import Printer from 'unplugin-printer/vite'
+
+export default defineConfig({
+  plugins: [
+    Printer({
+      info: [
+        // 1. use string value
+        'Hello World',
+
+        // 2. use object value to customize the text color and style
+        { text: 'Hello World', padding: 1, margin: 1, borderColor: 'green' },
+
+        // 3. use function value to customize the text color and style
+        (kolorist) => {
+          return {
+            text: kolorist.yellow('Hello World'),
+            padding: 1,
+            margin: 1,
+          }
+        },
+
+        // 4. use with async function
+        async (kolorist) => {
+          const text = await fetch('https://api.github.com/repos/unplugin/unplugin-printer')
+            .then(res => res.json())
+            .then(res => res.description)
+
+          return {
+            text: kolorist.yellow(text),
+            padding: 1,
+            margin: 1,
+          }
+        },
+      ]
+    }),
+  ],
+})
+```
+
+
 <details>
 <summary>Vite</summary><br>
 
@@ -33,8 +106,6 @@ export default defineConfig({
   ],
 })
 ```
-
-Example: [`playground/`](./playground/)
 
 <br></details>
 
