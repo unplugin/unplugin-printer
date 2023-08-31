@@ -2,7 +2,7 @@
 
 <!-- <p align="center">
   <a href="https://www.npmjs.com/package/unplugin-printer" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/npm/v/unplugin-printer" alt="NPM Version" /></a>
- <a href="https://github.com/webfansplz/unplugin-printer/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/webfansplz/unplugin-printer" alt="License" /></a>
+ <a href="https://github.com/unplugin/unplugin-printer/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/unplugin/unplugin-printer" alt="License" /></a>
 </p> -->
 
 <p align="center">

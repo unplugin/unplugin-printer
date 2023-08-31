@@ -4,14 +4,15 @@
   "version": "0.0.2",
   "packageManager": "pnpm@8.6.12",
   "description": "Print info on the terminal",
+  "author": "webfansplz",
   "license": "MIT",
-  "homepage": "https://github.com/webfansplz/unplugin-printer#readme",
+  "homepage": "https://github.com/unplugin/unplugin-printer#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webfansplz/unplugin-printer.git"
+    "url": "git+https://github.com/unplugin/unplugin-printer.git"
   },
   "bugs": {
-    "url": "https://github.com/webfansplz/unplugin-printer/issues"
+    "url": "https://github.com/unplugin/unplugin-printer/issues"
   },
   "keywords": [
     "unplugin",

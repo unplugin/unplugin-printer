@@ -7,7 +7,7 @@ module.exports = {
             await new Promise(resolve => setTimeout(resolve, 1000))
           },
           ({ lightCyan, green, bold }) => {
-            const text = `  ${green('➜')}  ${bold('Repo:')} ${lightCyan('https://github.com/webfansplz/unplugin-printer')}`
+            const text = `  ${green('➜')}  ${bold('Repo:')} ${lightCyan('https://github.com/unplugin/unplugin-printer')}`
             return {
               text,
               title: 'Unplugin Printer',

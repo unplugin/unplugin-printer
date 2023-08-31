@@ -8,10 +8,10 @@ export default defineConfig({
     Unplugin({
       info: [
         ({ lightCyan, green, bold }) => {
-          return `  ${green('➜')}  ${bold('Printer:')} ${lightCyan('https://github.com/webfansplz/unplugin-printer')}`
+          return `  ${green('➜')}  ${bold('Printer:')} ${lightCyan('https://github.com/unplugin/unplugin-printer')}`
         },
         ({ lightCyan, green, bold }) => {
-          const text = `  ${green('➜')}  ${bold('Repo:')} ${lightCyan('https://github.com/webfansplz/unplugin-printer')}`
+          const text = `  ${green('➜')}  ${bold('Repo:')} ${lightCyan('https://github.com/unplugin/unplugin-printer')}`
           return {
             text,
             title: 'Unplugin Printer',
