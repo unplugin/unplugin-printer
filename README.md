@@ -1,6 +1,19 @@
 # unplugin-printer
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-printer?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-printer)
+
+<p align="center">
+<img src="./screenshot.png" alt="unplugin-printer">
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/unplugin-printer" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/npm/v/unplugin-printer" alt="NPM Version" /></a>
+ <a href="https://github.com/webfansplz/unplugin-printer/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/webfansplz/unplugin-printer" alt="License" /></a>
+</p>
+
+<p align="center">
+<a href="https://stackblitz.com/edit/unplugin-printer-vite?file=vite.config.ts&view=editor"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
+</p>
+
 
 ## Install
 
