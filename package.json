@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.2",
   "packageManager": "pnpm@8.6.12",
-  "description": "Print info on the terminal",
+  "description": "Print beautiful info in the terminal",
   "author": "webfansplz",
   "license": "MIT",
   "homepage": "https://github.com/unplugin/unplugin-printer#readme",
